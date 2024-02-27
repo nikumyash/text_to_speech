@@ -31,7 +31,7 @@ export default function Home() {
         </section>
         <Tts/>
       </section>
-      <footer>
+      <footer className="text-center">
         Text to speech conversion is possible thanks to <Link href={"https://huggingface.co/Voicemod/fastspeech2-en-male1"}>Voicemod/fastspeech2-en-male1</Link>
       </footer>
     </main>

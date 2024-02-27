@@ -10,7 +10,7 @@ export default function Home() {
         <nav className="flex justify-between px-8 w-full my-6">
           <Link href={"/"} className="text-4xl flex items-center justify-center font-semibold tracking-tight">
             <Image src={"/logo.png"} height={64} width={64} alt={"Joice logo"} />
-            <p>Joice</p>
+            <p className="hidden md:block">Joice</p>
           </Link>
           <div className="flex items-center gap-4 justify-center">
             <Button asChild className="p-2">
@@ -18,7 +18,7 @@ export default function Home() {
                 <Image src={"/github.png"} width={24} height={24} alt="Github"></Image>
               </Link>
             </Button>
-            <Link href={"https://nikumyash.in"}>
+            <Link className="hidden md:block" href={"https://nikumyash.in"}>
               @nikumyash
             </Link>
           </div>

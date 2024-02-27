@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <section className="w-full max-w-7xl mx-auto h-full">
-        <nav className="flex justify-between px-8 w-full my-6">
+        <nav className="flex justify-between px-4 md:px-8 w-full my-6">
           <Link href={"/"} className="text-4xl flex items-center justify-center font-semibold tracking-tight">
             <Image src={"/logo.png"} height={64} width={64} alt={"Joice logo"} />
             <p className="hidden md:block">Joice</p>
@@ -23,7 +23,7 @@ export default function Home() {
             </Link>
           </div>
         </nav>
-        <section className="w-full flex px-2 flex-col my-24 items-center justify-center">
+        <section className="w-full flex px-2 flex-col my-12 md:my-24 items-center justify-center">
           <h3 className="font-extrabold text-2xl md:text-5xl text-center max-w-2xl">
             Simple and easy to use <span className="text-blue-500">Text to Speech Converter</span>
           </h3>
@@ -32,7 +32,7 @@ export default function Home() {
         <Tts/>
       </section>
       <footer className="text-center">
-        Text to speech conversion is possible thanks to <Link href={"https://huggingface.co/Voicemod/fastspeech2-en-male1"}>Voicemod/fastspeech2-en-male1</Link>
+        Text to speech conversion is done using <Link href={"https://huggingface.co/Voicemod/fastspeech2-en-male1"}>Voicemod/fastspeech2-en-male1</Link>
       </footer>
     </main>
   );

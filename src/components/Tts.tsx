@@ -46,8 +46,8 @@ export default function Tts(){
   return (
     <section className="w-full my-4 md:my-24 flex flex-col items-center justify-center">
     <div className="w-full flex flex-col gap-1 px-4 md:px-16">
-      <Label htmlFor="textarea"><h3 className="text-lg font-bold">Text</h3><p className='text-gray-500 text-md'>Max 1024 letters</p></Label>
-      <Textarea ref={textarea} maxLength={1024} placeholder="Enter your text here..." id="textarea" className="text-md h-64 focus:!ring-transparent"/>
+      <Label htmlFor="textarea"><h3 className="text-lg font-bold">Text</h3><p className='text-gray-500 text-md'>Max 256 letters</p></Label>
+      <Textarea ref={textarea} maxLength={256} placeholder="Enter your text here..." id="textarea" className="text-md h-64 focus:!ring-transparent"/>
     </div>
     <div className="w-full max-w-xl flex items-center flex-col justify-center mx-auto my-4">
     {audioURL && !isLoading && (
